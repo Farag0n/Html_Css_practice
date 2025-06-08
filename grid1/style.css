@@ -1,0 +1,39 @@
+* {
+    /*
+    La propiedad box-sizing en CSS controla cómo se calcula el tamaño
+    total de un elemento. Determina si el ancho y la altura declarados 
+    incluyen el relleno (padding) y el borde (border) o no. 
+    En otras palabras, decide si el elemento se ajusta a sus dimensiones 
+    declaradas (content-box) o si el padding y el border se suman a esas dimensiones
+    (border-box).  
+     */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 24px;
+    line-height: 2;
+    background-color: black;
+    color: white;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    /* creamos el grid */
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 20% 50 30%;
+
+}
+
+.parte {
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 22px;
+    border: pink 2px solid;
+}
