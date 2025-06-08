@@ -1,0 +1,128 @@
+/* Reset básico de valores pre establecidos que 
+pueden causar conflicto body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*le aplico un color de fondo a todo el body*/
+body {
+  background-color: tomato;
+}
+
+/*buscar una clase para aplicar estilos*/
+#titulo {
+  color: wheat;
+}
+
+/* esto se hace para seleccionar un grupo de etiquetas pero solo
+las que cumplen con una clase especifica*/
+p.texto {
+  color: red;
+}
+
+p.especial {
+  color: blue;
+}
+
+div p {
+  color: goldenrod;
+}
+
+div h2, div h3 {
+  color: brown;
+}
+
+/*cambiar todo dentro del html*/
+* {
+  font-size: 28px;
+  /*el selector solo aplica propiedades a los elementos  a los que no se les haya aplicado ninguna propiedad*/
+  /* color: black; */
+  
+
+}
+/* color exagecimal*/
+.color {
+  color: #ff0;
+}
+
+/*borde de elemento*/
+.color {
+  /* border: 5px rgb(253, 0, 0) inset; */
+
+  /* asignar el estilo del borde */
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 5px;
+  /* border-width: 5px; */
+  /* medidas relativas */
+  border-width: 2rem;
+}
+
+#fondo {
+  background-color: rgba(255,255,0, 0.4);
+  /* el rgba permite dar un color 
+  y una transparencia a el mismo */
+  /* opacity: 0.3; para que todo el elemento tenga opacidad */
+  background-image: url('assets/wallpaper.jpg');
+  height: 200px;
+  /* background-size: cover; */
+  background-size: 300px 200px;
+  /* background-repeat: no-repeat; */
+  /* repetir varias en diferentes ejes */
+  background-repeat: repeat-x;
+  /* posicionar el back ground */
+  background-position: center bottom;
+}
+
+/* Margin, padding, overflow */
+.margen {
+  background-color: chocolate;
+  margin: 15px 40px 30px 257px;
+  padding: 30px 25px 20px 15px;
+  border: solid 2px black;
+  height: 140px;
+  width: 56px;
+  overflow: hidden; /* lo que no quepa dentro del elemto se oculta o con scroll pone unas barras para ver el contenido completo*/
+  outline: 5px solid palevioletred;
+
+}
+
+.texte {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: line-through;
+  text-shadow: 3px 3px 6px blue;
+}
+
+/* link y pasar el mouse por encima, el orden de estos es importante */
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: magenta;
+}
+
+a:active {
+  color: coral;
+}
+
+/* display, La propiedad display en CSS determina cómo un elemento se muestra en una página web y afecta su comportamiento y diseño*/
+span {
+  
+  display: block;
+}
+
+.inline {
+  /* los elementos aparecen en la misma linea */
+  display: inline;
+}
+
+
+

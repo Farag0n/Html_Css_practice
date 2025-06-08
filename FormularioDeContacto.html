@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+<!--Entender este codigo a la perfeccion-->
+    <!----->
+    <form action="/send" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- Inicia el formulario. "action" indica a dónde se envían los datos, y "method" cómo se envían -->
+    <form action="/send" method="post">
+
+        <!-- Etiqueta para el campo de nombre. El texto visible es "Name:" -->
+        <label for="name">Name:</label>
+        
+        <!-- Campo de texto para escribir el nombre -->
+        <!-- "id" y "name" deben coincidir con el "for" del label y con el nombre del dato enviado -->
+        <!-- "required" obliga al usuario a llenar este campo -->
+        <input type="text" id="name" name="name" required>
+
+        <!-- Etiqueta para el campo de correo -->
+        <label for="email">Email:</label>
+        
+        <!-- Campo para ingresar una dirección de correo -->
+        <!-- "type=email" valida que el formato sea correcto -->
+        <input type="email" id="email" name="email" required>
+
+        <!-- Etiqueta para el área de mensaje -->
+        <label for="message">Message:</label>
+        
+        <!-- Campo de texto multilínea para escribir un mensaje -->
+        <!-- "rows=4" muestra 4 líneas de altura -->
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Botón para enviar el formulario -->
+        <!-- "type=submit" hace que se manden los datos -->
+        <!-- "value" es el texto que aparece en el botón -->
+        <input type="submit" value="Send">
+
+</form>
+</body>
+</html>

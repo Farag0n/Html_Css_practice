@@ -1,0 +1,136 @@
+/* 
+ * Estilos globales del body 
+ * Centramos el contenido principal de la página usando Flexbox.
+ */
+body {
+    background-color: #f0f0f0; /* Fondo gris claro para una estética suave y profesional */
+    margin: 0;                /* Elimina los márgenes predeterminados del navegador */
+    padding: 0;               /* Elimina el relleno predeterminado */
+    display: flex;            /* Activamos Flexbox para alinear hijos */
+    justify-content: center; /* Centrado horizontal de los elementos hijos */
+}
+
+/* 
+ * Contenedor principal semántico <main>
+ * Usamos max-width para limitar el ancho y mejorar la legibilidad.
+ */
+main {
+    max-width: 800px;         /* Ancho máximo de 800px para evitar que se expanda demasiado */
+    width: 100%;              /* Se adapta al ancho del viewport */
+    text-align: center;       /* Centra el texto dentro del contenedor */
+}
+
+/* 
+ * Ejemplos de selectores básicos
+ * Etiqueta, clase y ID para aplicar distintos colores
+ */
+div {
+    color: blue;              /* Aplica a todos los <div> */
+}
+
+.highlight {
+    color: red;               /* Aplica a los elementos con clase "highlight" */
+}
+
+#special {
+    color: green;             /* Aplica al elemento con ID "special" */
+}
+
+/* 
+ * Caja con fondo blanco, sombra y borde negro
+ * Muy usada para destacar secciones o tarjetas de contenido
+ */
+.box {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra gris con transparencia */
+    padding: 20px;
+    margin: 10px auto;
+}
+
+/* 
+ * Contenedor secundario con borde grueso
+ */
+.content {
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    border: 5px solid #333;  /* Borde oscuro para resaltar */
+}
+
+/* 
+ * Elemento inline-block: se comporta como bloque, pero sin romper la línea
+ * Útil para botones, cuadros, iconos alineados
+ */
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* 
+ * Caja fija (position: fixed)
+ * Ideal para botones de ayuda o notificaciones
+ */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    padding: 10px;
+}
+
+/* 
+ * Caja rotada con transform
+ * Rotación de 45 grados para diseño creativo
+ */
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    margin: 10px auto;
+}
+
+/* 
+ * Estilo para enlaces cuando el cursor pasa encima (hover)
+ * Mejora la interactividad visual
+ */
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 
+ * Pseudo-elemento ::before para insertar contenido antes del contenido real
+ * Sin necesidad de editar el HTML
+ */
+.box::before {
+    content: "New!";          /* Inserta el texto “New!” */
+    color: red;
+    font-weight: bold; /*font-weight en CSS se utiliza para controlar el grosor o peso de los caracteres de una fuente*/
+}
+
+/* 
+ * Animación fade-in al cargar un elemento
+ * Se usa comúnmente para dar transiciones suaves al aparecer
+ */
+.fade-in {
+    animation: fade 2s ease-in-out; /* Nombre de animación, duración y tipo de transición */
+}
+
+/* 
+ * Definición de la animación "fade"
+ * Va de opacidad 0 a 1 para que el elemento aparezca suavemente
+ */
+@keyframes fade {/*@keyframes en CSS se utiliza para definir una secuencia de animación, especificando los estilos CSS a aplicar en diferentes puntos a lo largo de la animación.*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
