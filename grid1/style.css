@@ -22,11 +22,19 @@ body {
 .contenedor {
     max-width: 960px;
     margin: 100px auto;
-    padding: 10px;
     /* creamos el grid */
+    outline: 8px solid yellow;
+    background-color: aqua;
     display: grid;
-    grid-template-columns: 20% 50% 30%;
-    grid-template-rows: 20% 50 30%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* el minmax() se usa para un valor minimo y uno maximo 
+    ejem: grid-template-coluns: minmax(*/
+    /* auto fill se usa para llenar la fila de tantas columnas como puedan caber*/
+    /* auto-fit las ajusta en el espacio disponible */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+
+    
 
 }
 
@@ -36,4 +44,54 @@ body {
     font-weight: bold;
     padding: 22px;
     border: pink 2px solid;
+
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2em;
+    cursor: pointer;
 }
+
+.parte:hover {
+    color: black;
+}
+
+.parte-1 {
+    background-color: rgb(109, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.parte-2 {
+    background-color: rgb(95, 209, 29);
+}
+
+.parte-3 {
+    background-color: rgb(238, 255, 0);
+}
+
+.parte-4 {
+    background-color: rgb(255, 0, 255);
+}
+
+.parte-5 {
+    background-color: rgb(0, 217, 255);
+}
+
+.parte-6 {
+    background-color: tomato;
+}
+
+.parte-7 {
+    background-color: chocolate;
+}
+
+.parte-8 {
+    background-color: fuchsia;
+}
+
+.parte-9 {
+    background-color: brown;
+}
+
