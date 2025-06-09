@@ -28,6 +28,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    /* grd-auto-flow es para controlar todo lo que esta adentro de manera automatica */
     /* el minmax() se usa para un valor minimo y uno maximo 
     ejem: grid-template-coluns: minmax(*/
     /* auto fill se usa para llenar la fila de tantas columnas como puedan caber*/
@@ -65,6 +66,7 @@ body {
 
 .parte-2 {
     background-color: rgb(95, 209, 29);
+    
 }
 
 .parte-3 {
